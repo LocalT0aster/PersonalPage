@@ -1,0 +1,25 @@
+{
+  "name": "personalpage",
+  "version": "1.0.0",
+  "description": "My personal homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LocalT0aster/PersonalPage.git"
+  },
+  "author": "LocalT0aster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LocalT0aster/PersonalPage/issues"
+  },
+  "homepage": "https://github.com/LocalT0aster/PersonalPage#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "live-server": "^1.1.0",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
+}
