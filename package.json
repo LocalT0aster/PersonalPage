@@ -1,6 +1,6 @@
 {
   "name": "personalpage",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "My personal homepage",
   "main": "index.js",
   "scripts": {
