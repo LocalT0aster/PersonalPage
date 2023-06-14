@@ -1,6 +1,6 @@
 {
   "name": "personalpage",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My personal homepage",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/LocalT0aster/PersonalPage#readme",
   "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "live-server": "^1.1.0",
-    "postcss": "^8.4.24",
+    "live-server": "^1.1.0"
+  },
+  "devDependencies": {
     "tailwindcss": "^3.3.2"
   }
 }

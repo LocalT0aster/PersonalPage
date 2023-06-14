@@ -1,3 +1,51 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+/*Tailwind CSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Fonts*/
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo2-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo2-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+/*Custom styles*/
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo2';
+    font-weight: 350;
+}
+
+body header {
+    font-family: 'RobotoMono';
+    font-weight: 600;
+    font-style: italic;
+}
