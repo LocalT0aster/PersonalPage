@@ -42,10 +42,21 @@ body {
     padding: 0;
     font-family: 'Exo2';
     font-weight: 350;
+    overflow-x: hidden;
 }
 
 body header {
     font-family: 'RobotoMono';
     font-weight: 600;
     font-style: italic;
+}
+
+@layer components {
+    .icon-default {
+        @apply flex-shrink-0 flex-grow-0 object-cover h-auto w-48 m-4
+    };
+
+    .project-container {
+        @apply relative bg-gray-700 rounded-2xl w-72 h-52 overflow-hidden hover:opacity-75 transition-opacity duration-300
+    };
 }
