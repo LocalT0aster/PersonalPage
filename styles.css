@@ -67,4 +67,13 @@ body header {
     .main-card-title {
         @apply text-4xl m-4 text-center
     };
+    .main-card-text {
+        @apply text-lg m-1 text-center
+    }
+    .main-container {
+        @apply container flex flex-row justify-center items-center gap-3
+    };
+    .comic-style {
+        @apply object-cover w-full
+    };
 }

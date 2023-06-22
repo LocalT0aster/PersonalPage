@@ -619,6 +619,61 @@ video {
   line-height: 2.5rem;
 }
 
+.main-card-text {
+  margin: 0.25rem;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.main-container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .main-container {
+    max-width: 1536px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.comic-style {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .visible {
   visibility: visible;
 }
@@ -698,10 +753,6 @@ video {
   width: 100vw;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -716,10 +767,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .rounded-2xl {
