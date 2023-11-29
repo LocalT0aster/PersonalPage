@@ -1,6 +1,6 @@
 /*Tailwind CSS*/
 
-/*! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com*/
+/*! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -709,10 +721,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -818,21 +826,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .opacity-100 {
   opacity: 1;
-}
-
-.opacity-20 {
-  opacity: 0.2;
 }
 
 .transition-opacity {
