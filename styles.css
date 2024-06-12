@@ -245,27 +245,3 @@ body footer p {
     line-height: 1.75rem;
     text-align: center;
 }
-
-@layer components {
-    .icon-default {
-        @apply flex-shrink-0 flex-grow-0 object-cover h-auto w-48 mx-4 mb-2
-    };
-    .project-container {
-        @apply relative bg-gray-700 rounded-2xl w-72 h-52 overflow-hidden hover:opacity-75 transition-opacity duration-300 mb-4
-    };
-    .project-image-text {
-        @apply absolute bottom-0 left-0 bg-black bg-opacity-50 text-white px-2 py-1
-    };
-    .main-card {
-        @apply bg-gray-700 rounded-2xl justify-center items-center mx-48 my-10
-    };
-    .main-card-title {
-        @apply text-4xl m-4 text-center
-    };
-    .main-card-text {
-        @apply text-lg m-1 text-center
-    }
-    .main-container {
-        @apply container flex flex-row justify-center items-center gap-3
-    };
-}
