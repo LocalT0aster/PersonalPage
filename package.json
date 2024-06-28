@@ -2,8 +2,12 @@
   "name": "personalpage",
   "version": "1.2.0",
   "description": "My personal homepage",
+  "type": "module",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "(rm -rf dist || true) && npx rollup -c && sh ./scripts/link.sh",
+    "dev": "npx serve ./dist/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LocalT0aster/PersonalPage.git"
@@ -13,9 +17,17 @@
   "bugs": {
     "url": "https://github.com/LocalT0aster/PersonalPage/issues"
   },
-  "homepage": "https://github.com/LocalT0aster/PersonalPage#readme",
-  "dependencies": {
-    "live-server": "^1.2.0",
+  "homepage": "https://github.com/LocalT0aster/PersonalPage",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-strip": "^3.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "glob": "^10.4.2",
+    "rollup": "^4.18.0",
+    "rollup-plugin-import-css": "^3.5.0",
+    "serve": "^14.2.3",
+    "tslib": "^2.6.3",
     "typescript": "^5.5.2"
   }
 }
