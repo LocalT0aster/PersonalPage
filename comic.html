@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LocalT0aster Homepage</title>
+        <link rel="icon" type="image/png" href="media/icon/favicon128.png" />
+        <link href="comic.css" rel="stylesheet" />
+        <link href="ripple.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="video-container">
+            <video muted="" id="bgvideo" autoplay="" loop="" playsinline="">
+                <source
+                    src="media/video/icosaederBlurFHD.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <main>
+            <button class="main-card" id="back" onclick="location.href='index.html'">
+                <img alt="🔙" src="media/image/back-arrow.svg" />
+            </button>
+            <div class="main-card" id="title_container">
+                <h1 class="main-card-title" id="title">Loading</h1>
+                <p class="main-card-text" id="date">????/??/??</p>
+            </div>
+            <img class="comic-style" src="media/image/Black.png" id="comic" alt="Placeholder image"/>
+        </main>
+        <script src="ripple.js" type="module"></script>
+        <script src="comic.js" type="module"></script>
+    </body>
+</html>

@@ -1,81 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocalT0aster Homepage</title>
-    <link rel="icon" type="image/png" href="media/icon/favicon128.png">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    <div class="video-container">
-        <video muted="" id="bgvideo" autoplay="" loop="" playsinline="">
-            <source src="media/video/icosaederBlurFHD.mp4" type="video/mp4"> Your browser does not support the video tag.
-        </video>
-    </div>
-    <header>
-        <br>
-        <h1>Welcome To The T0aster Zone</h1>
-    </header>
-    <main>
-        <div id="about-container">
-            <p id="about-header">Page about LocalT0asterDan</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LocalT0aster Homepage</title>
+        <link rel="icon" type="image/png" href="media/icon/favicon128.png" />
+        <link href="index.css" rel="stylesheet" />
+        <link href="ripple.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="video-container">
+            <video muted="" id="bgvideo" autoplay="" loop="" playsinline="">
+                <source
+                    src="media/video/icosaederBlurFHD.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
         </div>
-        <div id="main-content">
-            <div class="main-card">
-                <h1 class="main-card-title">My Stack:</h1>
-                <div class="main-container" id="stack-container">
-                    <img src="media/icon/csharp.png" class="icon-default" alt="C#">
-                    <img src="media/icon/dotnet.png" class="icon-default" alt=".NET">
-                    <img src="media/icon/unity.png" class="icon-default" alt="Unity">
-                    <img src="media/icon/python.png" class="icon-default" alt="Python">
-                    <img src="media/icon/arduino.png" class="icon-default" alt="Arduino">
+        <header>
+            <br />
+            <h1>Welcome To The T0aster Zone</h1>
+        </header>
+        <main>
+            <div id="about-container">
+                <p id="about-header">Page about LocalT0asterDan</p>
+            </div>
+            <div id="main-content">
+                <div class="main-card">
+                    <h1 class="main-card-title">XKCD Comic:</h1>
+                    <div class="main-container">
+                        <a
+                            href="comic.html"
+                            target="_self"
+                            class="project-container"
+                        >
+                            <div class="picture-link">
+                                <img
+                                    src="media/image/comic.png"
+                                    alt="XKCD comic preview"
+                                    id="comic-img"
+                                />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-card">
+                    <h1 class="main-card-title">My Stack:</h1>
+                    <div class="main-container" id="stack-container">
+                        <img
+                            src="media/icon/csharp.png"
+                            class="icon-default"
+                            alt="C#"
+                        />
+                        <img
+                            src="media/icon/dotnet.png"
+                            class="icon-default"
+                            alt=".NET"
+                        />
+                        <img
+                            src="media/icon/unity.png"
+                            class="icon-default"
+                            alt="Unity"
+                        />
+                        <img
+                            src="media/icon/python.png"
+                            class="icon-default"
+                            alt="Python"
+                        />
+                        <img
+                            src="media/icon/arduino.png"
+                            class="icon-default"
+                            alt="Arduino"
+                        />
+                    </div>
+                </div>
+                <div class="main-card">
+                    <h1 class="main-card-title">My Projects:</h1>
+                    <div class="main-container" id="main-project-container">
+                        <a
+                            href="https://github.com/LocalT0aster/ESPGC"
+                            target="_blank"
+                            class="project-container"
+                        >
+                            <div class="picture-link">
+                                <img
+                                    src="media/image/espgc.jpg"
+                                    alt="Project 1"
+                                    id="project1"
+                                />
+                                <div class="project-image-text">ESPGC</div>
+                            </div>
+                        </a>
+                        <a class="project-container">
+                            <div class="picture-link">
+                                <img
+                                    src="media/image/vnature.png"
+                                    alt="Project 2"
+                                    id="project2"
+                                />
+                                <div class="project-image-text">
+                                    Virtual Nature VR
+                                </div>
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/LocalT0aster/PersonalPage"
+                            target="_blank"
+                            class="project-container"
+                        >
+                            <div class="picture-link">
+                                <img
+                                    src="media/image/site.png"
+                                    alt="Project 3"
+                                    id="project3"
+                                />
+                                <div class="project-image-text">This Site</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-card">
+                    <h1 class="main-card-title">
+                        My Toaster Pictures Collection:
+                    </h1>
+                    <div class="main-container" id="toaster-container">
+                        <img
+                            src="media/image/toaster1.webp"
+                            alt="toaster1"
+                            class="icon-toaster"
+                        />
+                        <img
+                            src="media/image/toaster2.jpg"
+                            alt="toaster2"
+                            class="icon-toaster"
+                        />
+                        <img
+                            src="media/image/toaster3.jpg"
+                            alt="toaster3"
+                            class="icon-toaster"
+                        />
+                        <img
+                            src="media/image/toaster4.jpg"
+                            alt="toaster4"
+                            class="icon-toaster"
+                        />
+                    </div>
+                </div>
+                <div class="main-card">
+                    <h1 class="main-card-title">Contact Me:</h1>
+                    <div class="main-container" id="contact-container">
+                        <a
+                            href="tg://resolve?domain=NeRaG0n7"
+                            target="_blank"
+                            class="icon-default"
+                            id="tg-link"
+                        >
+                            <div class="picture-link">
+                                <img
+                                    src="media/icon/telegram.svg"
+                                    class="icon-default"
+                                    alt="Telegram"
+                                />
+                            </div>
+                        </a>
+                        <a
+                            href="mailto:localt0aster@proton.me"
+                            target="_blank"
+                            class="icon-default"
+                            id="email"
+                        >
+                            <div class="picture-link">
+                                <img
+                                    src="media/icon/protonmail.png"
+                                    class="icon-default"
+                                    alt="Email"
+                                />
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/LocalT0aster/"
+                            target="_blank"
+                            class="icon-default"
+                            id="gh-link"
+                        >
+                            <div class="picture-link">
+                                <img
+                                    src="media/icon/github.svg"
+                                    class="icon-default"
+                                    alt="GitHub"
+                                />
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="main-card">
-                <h1 class="main-card-title">My Projects:</h1>
-                <div class="main-container" id="main-project-container">
-                    <a href="https://github.com/LocalT0aster/ESPGC" target="_blank" class="project-container">
-                        <img src="media/image/espgc.jpg" alt="Project 1" id="project1">
-                        <div class="project-image-text">ESPGC</div>
-                    </a>
-                    <a class="project-container">
-                        <img src="media/image/vnature.png" alt="Project 2" id="project2">
-                        <div class="project-image-text">Virtual Nature VR</div>
-                    </a>
-                    <a href="https://github.com/LocalT0aster/PersonalPage" target="_blank" class="project-container">
-                        <img src="media/image/site.png" alt="Project 3" id="project3">
-                        <div class="project-image-text">This Site</div>
-                    </a>
-                </div>
-            </div>
-            <div class="main-card">
-                <h1 class="main-card-title">My Toaster Pictures Collection:</h1>
-                <div class="main-container" id="toaster-container">
-                    <img src="media/image/toaster1.webp" alt="toaster1" class="icon-toaster">
-                    <img src="media/image/toaster2.jpg" alt="toaster2" class="icon-toaster">
-                    <img src="media/image/toaster3.jpg" alt="toaster3" class="icon-toaster">
-                    <img src="media/image/toaster4.jpg" alt="toaster4" class="icon-toaster">
-                </div>
-            </div>
-            <div class="main-card">
-                <h1 class="main-card-title">Contact Me:</h1>
-                <div class="main-container" id="contact-container">
-                    <a href="tg://resolve?domain=NeRaG0n7" target="_blank" class="icon-default" id="tg-link">
-                        <img src="media/icon/telegram.svg" class="icon-default" alt="Telegram">
-                    </a>
-                    <a href="mailto:localt0aster@proton.me" target="_blank" class="icon-default" id="email">
-                        <img src="media/icon/protonmail.png" class="icon-default " alt="Email">
-                    </a>
-                    <a href="https://github.com/LocalT0aster/" target="_blank" class="icon-default" id="gh-link">
-                        <img src="media/icon/github.svg" class="icon-default" alt="GitHub">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p> </p>
-    </footer>
-</body>
+        </main>
+        <footer>
+            <p></p>
+        </footer>
+        <script src="ripple.js" type="module"></script>
+    </body>
 </html>

@@ -1,0 +1,145 @@
+/*Fonts*/
+@font-face {
+    font-family: "RobotoMono";
+    src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("fonts/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Exo2";
+    src: url("fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Exo2";
+    src: url("fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+.video-container {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -100;
+}
+
+#bgvideo {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    object-fit: cover;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Exo2";
+    font-weight: 350;
+    overflow-x: hidden;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: rgb(55 65 81);
+}
+
+.main-card-title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.main-card-text {
+    margin: 0.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.comic-style {
+    object-fit: cover;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#back {
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    height: 3rem;
+    width: 3rem;
+    justify-items: center;
+    align-items: center;
+    background-color: grey;
+    z-index: 10;
+}
+#back img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,28 +1,28 @@
 /*Fonts*/
 @font-face {
-    font-family: 'RobotoMono';
-    src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-family: "RobotoMono";
+    src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'RobotoMono';
-    src: url('fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+    font-family: "RobotoMono";
+    src: url("fonts/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Exo2';
-    src: url('fonts/Exo2-VariableFont_wght.ttf') format('truetype');
+    font-family: "Exo2";
+    src: url("fonts/Exo2-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Exo2';
-    src: url('fonts/Exo2-Italic-VariableFont_wght.ttf') format('truetype');
+    font-family: "Exo2";
+    src: url("fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: italic;
 }
@@ -54,6 +54,10 @@
     opacity: 1;
 }
 
+a:visited {
+    color: white;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -61,13 +65,13 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Exo2';
+    font-family: "Exo2";
     font-weight: 350;
     overflow-x: hidden;
 }
 
 body header {
-    font-family: 'RobotoMono';
+    font-family: "RobotoMono";
     font-weight: 600;
     font-style: italic;
     width: 100%;
@@ -120,6 +124,7 @@ body main {
 }
 
 .icon-default {
+    position: relative;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
