@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(240, 240, 240, 0.75), rgba(0, 0, 0, 0));
+}
+
+@keyframes scroll-horizontal1 {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  49.98% {
+    left: -100%;
+    opacity: 1;
+  }
+  49.99% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    left: 100%;
+    opacity: 0;
+  }
+  50.01% {
+    left: 100%;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-horizontal2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@layer components {
+  .text-350 {
+    font-weight: 350;
+  }
+  .carousel-cover {
+    background-color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    mix-blend-mode: darken;
+  }
+  .carousel-secondary,
+  .carousel-primary {
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+  .carousel-img {
+    width: 100%;
+    margin-left: 1.25rem;
+    border-radius: 1rem;
+  }
+  .carousel-primary {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal1 20s linear infinite;
+  }
+  .carousel-secondary {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal2 20s linear infinite;
+  }
+  .rotateXY-12 {
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    transform: rotate3d(1, 1, 0, 12deg);
+  }
+  .icon-default {
+    @apply flex-shrink-0 flex-grow-0 object-cover h-auto w-48 mx-4 mb-2;
+  }
+}
+
+@import "Hero.module.css";
