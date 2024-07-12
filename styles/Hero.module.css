@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --triangle-offset: 0.075rem;
+}
+
+#hero_title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #171717;
+  z-index: -10;
+  animation: fadeIn 1s ease;
+}
+
+@layer components {
+  .herotext {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    mix-blend-mode: lighten;
+    transform-origin: center center;
+    white-space: nowrap;
+    color: transparent;
+    z-index: -5;
+    text-shadow: 2px 2px 20px rgb(0 0 0 / 100%);
+  }
+}
+
+#herotext_c {
+  color: rgb(0, 255, 255);
+  text-shadow: none;
+  animation: moveInTriangleLeft 3s ease-in-out infinite;
+}
+
+#herotext_m {
+  color: magenta;
+  text-shadow: none;
+  animation: moveInTriangle 3s ease-in-out infinite;
+}
+
+#herotext_y {
+  color: yellow;
+  text-shadow: none;
+  animation: moveInTriangleRight 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInTriangle {
+  0% {
+    transform: translate(-50%, calc(-50% + var(--triangle-offset))) translate(0, var(--triangle-offset));
+  }
+  33.33% {
+    transform: translate(calc(-50% + var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+  66.66% {
+    transform: translate(calc(-50% - var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+  100% {
+    transform: translate(-50%, calc(-50% + var(--triangle-offset))) translate(0, var(--triangle-offset));
+  }
+}
+
+@keyframes moveInTriangleRight {
+  0% {
+    transform: translate(calc(-50% + var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+  33.33% {
+    transform: translate(calc(-50% - var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+  66.66% {
+    transform: translate(-50%, calc(-50% + var(--triangle-offset))) translate(0, var(--triangle-offset));
+  }
+  100% {
+    transform: translate(calc(-50% + var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+}
+
+@keyframes moveInTriangleLeft {
+  0% {
+    transform: translate(calc(-50% - var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+  33.33% {
+    transform: translate(-50%, calc(-50% + var(--triangle-offset))) translate(0, var(--triangle-offset));
+  }
+  66.66% {
+    transform: translate(calc(-50% + var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+  100% {
+    transform: translate(calc(-50% - var(--triangle-offset)), calc(-50% - var(--triangle-offset)))
+      translate(0, var(--triangle-offset));
+  }
+}
