@@ -1,4 +1,4 @@
 {
-    "./**/*.{ts,tsx}": ["npx eslint --fix", "npx prettier --w"],
+    "./**/*.{ts,tsx}": ["npx eslint --fix", "npx prettier -w"],
     "./**/*.{css,js,jsx,md}": ["npx prettier -w -u"]
 }
